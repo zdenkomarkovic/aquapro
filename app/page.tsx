@@ -35,16 +35,17 @@ import {
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
-const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } = {
-  clock: Clock,
-  settings: Settings,
-  bath: Bath,
-  wrench: Wrench,
-  droplet: Droplet,
-  pipette: Droplet,
-  shield: Shield,
-  network: Network,
-};
+const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } =
+  {
+    clock: Clock,
+    settings: Settings,
+    bath: Bath,
+    wrench: Wrench,
+    droplet: Droplet,
+    pipette: Droplet,
+    shield: Shield,
+    network: Network,
+  };
 
 const StatCard = ({
   number,
@@ -94,7 +95,7 @@ export default function Home() {
       <section
         className="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-4"
         style={{
-          backgroundImage: "url(/hero.jpg)",
+          backgroundImage: "url(/hero1.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -112,10 +113,10 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-lg">
               AquaPro Servis
             </h1>
-            <p className="text-xl md:text-3xl text-primary mb-4 font-semibold drop-shadow-md">
+            <p className="text-xl md:text-3xl text-white mb-4 font-semibold drop-shadow-md">
               Brzo • Pouzdano • Efikasno
             </p>
-            <p className="text-lg md:text-2xl text-primary mb-8 max-w-3xl mx-auto drop-shadow-md">
+            <p className="text-lg md:text-2xl text-white mb-8 max-w-3xl mx-auto drop-shadow-md">
               Profesionalne vodoinstalaterske usluge u Beogradu
             </p>
           </motion.div>
@@ -162,15 +163,15 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className=" backdrop-blur-sm rounded-2xl p-6 md:p-8 max-w-2xl mx-auto "
+            className=" backdrop-blur-sm rounded-2xl p-3 md:p-8 max-w-2xl mx-auto "
           >
             <div className="flex items-center justify-center gap-3 mb-3">
-              <Clock className="w-8 h-8 text-white" />
-              <h3 className="text-2xl md:text-3xl font-bold text-white">
+              <Clock className="w-8 h-8 text-primary" />
+              <h3 className="text-2xl md:text-3xl font-bold text-primary">
                 Hitne Intervencije 0-24
               </h3>
             </div>
-            <p className="text-lg md:text-2xl text-white">
+            <p className="text-lg md:text-2xl font-bold text-primary">
               Dostupni smo non-stop za sve hitne slučajeve!
             </p>
           </motion.div>
