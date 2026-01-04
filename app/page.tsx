@@ -35,7 +35,7 @@ import {
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
-const iconMap: { [key: string]: any } = {
+const iconMap: { [key: string]: React.ComponentType<{ className?: string }> } = {
   clock: Clock,
   settings: Settings,
   bath: Bath,
